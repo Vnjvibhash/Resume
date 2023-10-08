@@ -40,8 +40,6 @@ header nav img {
   height: 56px;
   width: 56px;
   object-fit: contain;
-  /* filter: invert(70%) sepia(96%) saturate(558%) hue-rotate(359deg)
-    brightness(103%) contrast(106%); */
 }
 
 header nav ul {
@@ -203,10 +201,12 @@ header nav .search i {
   color: #fbfbfb;
   font-size: 20px;
   text-align: justify;
+  font-weight: 300;
 }
 
 .about .description p span {
   color: #a4161a;
+  font-weight: 800 !important;
 }
 .about .description p i {
   color: #771d1d;
@@ -375,44 +375,37 @@ header nav .search i {
 .experience {
   display: flex;
   flex-direction: column;
-  /* height: 100vh; */
+  height: auto;
   width: 100vw;
+  padding-top: 10vh;
   position: relative;
   align-items: center;
   justify-content: center;
-}
-
-.darker-div {
-  background-color: #34353a;
-  width: 100vw;
-  height: 10vh;
+  background-color: #3d3e42;
 }
 
 .experience h1 {
-  position: absolute;
-  color: #fbfbfb;
   font-size: 56px;
+  font-weight: 700;
+  color: #fbfbfb;
   font-family: "Libre Baskerville", serif;
-  transform: translate(-50%, -50%);
-  top: 10%;
-  left: 15%;
 }
 
 .lighter-div {
-  background-color: #3d3e42;
   width: 100vw;
-  /* height: 90vh; */
-  padding: 10vh;
+  height: auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 50px;
 }
 
 .lighter-div .exp {
-  height: 30vh;
-  width: 50vw;
+  height: auto;
+  width: 70vw;
   position: relative;
-  margin-left: 20vh;
+  margin: 10vh;
 }
 
 .exp h2 {
@@ -439,11 +432,13 @@ header nav .search i {
   content: "";
   height: 190px;
   width: 2.5px;
+  margin-top: 20px;
   background-color: #fbfbfb;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 55%;
   left: -5%;
+  box-shadow: 0px 0px 10px 1px #a4161a;
 }
 .exp-desc h3 {
   color: #fbfbfb;
@@ -456,15 +451,21 @@ header nav .search i {
   color: #fbfbfb;
   font-size: 16;
   font-weight: 400;
+  text-align: justify;
 }
 
 .contact-me {
   width: 100vw;
-  padding: 100px;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.contact-me iframe{
+  width: 90vh;
+  height: 400px;
 }
 
 .contact-me h1 {
@@ -476,7 +477,10 @@ header nav .search i {
 
 .contact {
   display: flex;
+  flex-direction: row;
+  padding: 20px;
   gap: 24px;
+
 }
 
 .contact-card {
@@ -484,6 +488,14 @@ header nav .search i {
   padding: 10px;
   border-radius: 8px;
   display: flex;
-  gap: 10px;
-  margin-top: 7.5vh;
+}
+
+@media (max-width: 725px){
+  .contact {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      gap: 24px;
+  
+    }
 }
