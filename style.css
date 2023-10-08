@@ -39,7 +39,10 @@ header nav {
 }
 
 @media (max-width: 600px) {
-
+  header nav{
+    visibility: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  }  
 }
 
 header nav img {
@@ -112,6 +115,15 @@ header nav .search i {
   justify-content: space-between;
 }
 
+.landing .socials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-top: 15vh;
+  margin-right: 15vh;
+}
+
 @media (max-width: 600px) {
   .landing {
       display: flex;
@@ -124,6 +136,7 @@ header nav .search i {
       gap: 10px;
       align-items: center;
       margin-top: 15vh;
+      margin-right: 1vh;
     } 
 }
 
@@ -479,6 +492,7 @@ header nav .search i {
   height: auto;
   width: 100vw;
   padding-top: 10vh;
+  padding-bottom: 10vh;
   position: relative;
   align-items: center;
   justify-content: center;
@@ -499,14 +513,14 @@ header nav .search i {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 10px;
 }
 
 .lighter-div .exp {
   height: auto;
   width: 70vw;
   position: relative;
-  margin: 10vh;
+  margin: 5vh;
 }
 
 .exp h2 {
