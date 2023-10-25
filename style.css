@@ -408,6 +408,11 @@ header nav .search i {
   background-color: #cc9e4e;
 }
 
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .education {
   display: flex;
   flex-direction: column;
