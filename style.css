@@ -567,11 +567,24 @@ a{
   margin: 10px 0;
 }
 
-.exp-desc p {
+/* .exp-desc p{
   color: #fbfbfb;
   font-size: 16;
   font-weight: 400;
   text-align: justify;
+} */
+.exp-desc-li{
+  padding-left: 4vw;
+  padding-top: 10px;
+}
+
+.exp-desc-li li{
+  color: #ffffff;
+  font-size: 16;
+  font-weight: 400;
+  text-align: justify;
+  padding-left: 10px;
+  line-height: 24px !important;
 }
 
 .contact-me {
