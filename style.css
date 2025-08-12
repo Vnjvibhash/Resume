@@ -643,11 +643,11 @@ a{
 
 .footer-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100vw;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
   flex-wrap: wrap;
 }
 
