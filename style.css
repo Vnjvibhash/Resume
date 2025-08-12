@@ -634,7 +634,7 @@ a{
 }
 
 .footer {
-  background-color: #111;
+  background-color: transparent;
   color: #fff;
   padding: 15px 0;
   text-align: center;
@@ -648,6 +648,7 @@ a{
   width: 100vw;
   padding-top: 1vh;
   padding-bottom: 1vh;
+  padding-inline: 10vh;
   flex-wrap: wrap;
 }
 
