@@ -645,7 +645,9 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  width: 100vw;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   flex-wrap: wrap;
 }
 
